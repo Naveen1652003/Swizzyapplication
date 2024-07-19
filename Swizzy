@@ -1,0 +1,253 @@
+package Simplearrays;
+import java.util.*;
+public class SwizzyApplication {
+
+	public static void main(String[] args) throws Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("---------------WELCOME TO SWIZZY------------");
+		System.out.println("Select the hotel");
+		System.out.println("1.buhar\n2.hydrabad\n3.a2b");
+		int hotel=sc.nextInt();
+		switch(hotel)
+		{
+		  case 1:
+		  {
+			  System.out.println("Welcome to buhar hotel");
+			  System.out.println("1.Mutton briyani\n2.Chicken briyani\n3.chicken-65");
+			  System.out.println(" enter the food number copen:");
+			  int f=sc.nextInt();
+			  System.out.println("-------------------Enter the quantity-------------:");
+			  int q=sc.nextInt();
+			  System.out.println("Please wait processing-------------------------------:");
+			  
+			  Thread.sleep(3000);
+			  int price=0;
+			  if(f==1)
+			  {
+			      price=280;
+			  }
+			  else if(f==2)
+			  {
+			      price=200;
+			  }
+			  else
+			  {
+				  price=100;
+			  }
+			  int total=price*q;
+			  System.out.println("Total Bill Amount-----:"+total);
+			  
+			  System.out.println("Redirecting to payment gateway........:");
+			  System.out.println("1.Gpay\n2.Phonepay");
+			  int choice=sc.nextInt();
+			  switch(choice)
+			  {
+			    case 1:
+			    {
+			    	System.out.println("enter the amount is:");
+			    	int billamount=sc.nextInt();
+			    	int otp=(int)(Math.random()*9999+9999);
+			    	System.out.println();
+			    	System.out.println(otp);
+			    	System.out.println("Enter the otp:");
+			    	int o=sc.nextInt();
+			    	if(o==otp)
+			    	{
+			    	System.out.println("Otp is sucessfully enterted");
+			    	System.out.println("Your order is delivery soon:\nthank you once again");
+			    	}
+			        else
+			        {
+			    		System.out.println("invalid otp");
+			        }
+			    
+			     break;
+			    }
+			    case 2:
+			    {
+			    	System.out.println("enter the amount is:");
+			    	int billamount=sc.nextInt();
+			    	int otp=(int)(Math.random()*9999+9999);
+			    	System.out.println();
+			    	System.out.println(otp);
+			    	System.out.println("Enter the otp:");
+			    	int o=sc.nextInt();
+			    	if(o==otp)
+			    	{
+			    	System.out.println("Otp is sucessfully enterted");
+			    	System.out.println("Your order is delivery soon:\nthank you once again");
+			    	}
+			        else
+			        {
+			    		System.out.println("invalid otp");
+			        }
+			    
+			     break;
+			    }
+			  }
+			  
+			  
+		  }
+		  break;
+		  case 2:
+		  {
+			  System.out.println("Welcome to hydrabad hotel");
+			  System.out.println("1.Mutton briyani\n2.Chicken briyani\n3.chicken-65");
+			  System.out.println(" enter the food number copen:");
+			  int f=sc.nextInt();
+			  System.out.println("-------------------Enter the quantity-------------:");
+			  int q=sc.nextInt();
+			  System.out.println("Please wait processing-------------------------------:");
+			  
+			  Thread.sleep(3000);
+			  int price=0;
+			  if(f==1)
+			  {
+			      price=280;
+			  }
+			  else if(f==2)
+			  {
+			      price=200;
+			  }
+			  else
+			  {
+				  price=100;
+			  }
+			  int total=price*q;
+			  System.out.println("Total Bill Amount-----:"+total);
+			  
+			  System.out.println("Redirecting to payment gateway........:");
+			  System.out.println("1.Gpay\n2.Phonepay");
+			  int choice=sc.nextInt();
+			  switch(choice)
+			  {
+			    case 1:
+			    {
+			    	System.out.println("enter the amount is:");
+			    	int billamount=sc.nextInt();
+			    	int otp=(int)(Math.random()*9999+9999);
+			    	System.out.println();
+			    	System.out.println(otp);
+			    	System.out.println("Enter the otp:");
+			    	int o=sc.nextInt();
+			    	if(o==otp)
+			    	{
+			    	System.out.println("Otp is sucessfully enterted");
+			    	System.out.println("Your order is delivery soon:\nthank you once again");
+			    	}
+			        else
+			        {
+			    		System.out.println("invalid otp");
+			        }
+			    
+			     break;
+			    }
+			    case 2:
+			    {
+			    	System.out.println("enter the amount is:");
+			    	int billamount=sc.nextInt();
+			    	int otp=(int)(Math.random()*9999+9999);
+			    	System.out.println();
+			    	System.out.println(otp);
+			    	System.out.println("Enter the otp:");
+			    	int o=sc.nextInt();
+			    	if(o==otp)
+			    	{
+			    	System.out.println("Otp is sucessfully enterted");
+			    	System.out.println("Your order is delivery soon:\nthank you once again");
+			    	}
+			        else
+			        {
+			    		System.out.println("invalid otp");
+			        }
+			    
+			     break;
+			    }
+		}
+	}
+		  break;
+		
+	case 3:
+	  {
+		  System.out.println("Welcome to a2b hotel");
+		  System.out.println("1.Mutton briyani\n2.Chicken briyani\n3.chicken-65");
+		  System.out.println(" enter the food number copen:");
+		  int f=sc.nextInt();
+		  System.out.println("-------------------Enter the quantity-------------:");
+		  int q=sc.nextInt();
+		  System.out.println("Please wait processing-------------------------------:");
+		  
+		  Thread.sleep(3000);
+		  int price=0;
+		  if(f==1)
+		  {
+		      price=280;
+		  }
+		  else if(f==2)
+		  {
+		      price=200;
+		  }
+		  else
+		  {
+			  price=100;
+		  }
+		  int total=price*q;
+		  System.out.println("Total Bill Amount-----:"+total);
+		  
+		  System.out.println("Redirecting to payment gateway........:");
+		  System.out.println("1.Gpay\n2.Phonepay");
+		  int choice=sc.nextInt();
+		  switch(choice)
+		  {
+		    case 1:
+		    {
+		    	System.out.println("enter the amount is:");
+		    	int billamount=sc.nextInt();
+		    	int otp=(int)(Math.random()*9999+9999);
+		    	System.out.println();
+		    	System.out.println(otp);
+		    	System.out.println("Enter the otp:");
+		    	int o=sc.nextInt();
+		    	if(o==otp)
+		    	{
+		    	System.out.println("Otp is sucessfully enterted");
+		    	System.out.println("Your order is delivery soon:\nthank you once again");
+		    	}
+		        else
+		        {
+		    		System.out.println("invalid otp");
+		        }
+		    
+		     break;
+		    }
+		    case 2:
+		    {
+		    	System.out.println("enter the amount is:");
+		    	int billamount=sc.nextInt();
+		    	int otp=(int)(Math.random()*9999+9999);
+		    	System.out.println();
+		    	System.out.println(otp);
+		    	System.out.println("Enter the otp: ");
+		    	int o=sc.nextInt();
+		    	if(o==otp)
+		    	{
+		    	System.out.println("Otp is sucessfully enterted");
+		    	System.out.println("Your order is delivery soon:\nthank you once again");
+		    	}
+		        else
+		        {
+		    		System.out.println("invalid otp");
+		        }
+		    
+		     break;
+		    }
+	}
+}
+	  
+	}
+		
+
+	}
+}
+			    
